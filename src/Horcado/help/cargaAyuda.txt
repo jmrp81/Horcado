@@ -1,0 +1,22 @@
+//Metodo para la carga de la Ayuda
+
+private void cargaAyuda(){
+
+   URL hsURL;
+   HelpSet hs;
+
+   try{
+     hsURL = HelpSet.findHelpSet(null, "Ayuda/Ayuda.hs");
+     hs = new HelpSet(null, hsURL);
+   } catch(Exception e){
+      System.out.println("Ayuda no encontrada");
+     return;
+   }
+
+   HelpBroker hb = hs.createHelpBroker();
+
+   hb.enableHelpKey(getRootPane(),"topic_inicio", hs);
+   hb.enableHelpOnButton(componente, "topic_inicio", hs);
+   hb.enableHelp(componente, "topic_concreto", hs);
+   
+ }

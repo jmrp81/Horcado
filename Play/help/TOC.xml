@@ -1,0 +1,12 @@
+﻿<toc version="1.0">
+	<tocitem text="Mi Editor ">
+		<tocitem text="Introducción" target="introduccion"/>
+		<tocitem text="Utilizar El Ahorcado">
+			<tocitem text="Como Jugar" target="comoJugar"/>
+			<tocitem text="Opciones del menu" target="opcionesMenu"/>
+		</tocitem>
+		<tocitem text="Personalizacion">
+			<tocitem text="Fondos de Pantalla" target="fondosPantalla"/>
+		</tocitem>
+	</tocitem>
+</toc>
